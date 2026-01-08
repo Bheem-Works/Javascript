@@ -32,4 +32,3 @@ let sayPen = "fountain pen";
 let concatPen = ballPen + sayPen;
 console.log(concatPen);
 
-let name = "vim"; console.log(name);
