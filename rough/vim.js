@@ -8,6 +8,11 @@ function countVowel(data){
 	data.toLowerCase().split('').forEach((char)=>{
 		vowels.includes(char)&&count++;
 	})	
+	for (const char of data.toLowerCase()) {
+		if (vowels.includes(char)) {
+			count++;
+		}
+	}
 
 	return count;
 }
