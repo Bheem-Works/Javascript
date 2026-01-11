@@ -1,0 +1,78 @@
+body {
+  background-color: black;
+  font-family: monospace;
+  margin: 0px 0px;
+  color: white;
+}
+
+navbar {
+  color: white;
+  margin: 0px;
+  padding: 20px 40px;
+  background-color: purple;
+  display: flex;
+  justify-content: space-between;
+  font-size: 3rem;
+  align-items: center;
+  font-family: monospace;
+}
+
+navbar ul {
+  margin: 10px 20px;
+  padding: 10px 20px;
+}
+
+navbar li {
+  list-style: none;
+}
+navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+navbar a:active {
+  color: orange;
+}
+.container {
+  /*      
+    unused;
+*/
+}
+
+.container .centerText {
+  margin-top: 13rem;
+  display: flex;
+}
+
+.centerText .right {
+  /* background-color: pink; */
+  width: 800px;
+  height: 200px;
+}
+.centerText .center {
+  font-family: monospace;
+  font-size: 2rem;
+  font-weight: 600;
+  width: auto;
+  height: auto;
+}
+.centerText .left {
+  /* background-color: blue; */
+  width: 400px;
+  height: 200px;
+}
+
+.main .profile {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main .profile .image {
+  width: 700px;
+  background: #fff;
+}
+.main .profile .bio {
+  font-size: 1rem;
+  font-weight: 400;
+  width: 700px;
+}
