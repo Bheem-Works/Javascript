@@ -1,18 +1,36 @@
 "use strict";
-// Taking the button value
 const start = document.getElementById("start");
 const pause = document.getElementById("pause");
 const reset = document.getElementById("reset");
-// haaaa fuck i don't know what to do .
-function timer() {
-    let count = 0;
-    for (let i = 0; i <= 10; i++) {
-        let timeC = count++;
-        console.log(timeC);
-        if (timeC == 10) {
-            break;
-        }
+const display = document.getElementById("display");
+let time = 0;
+let intervalId = null;
+const fStart = () => {
+    if (intervalId !== null)
+        return;
+    intervalId = window.setInterval(() => {
+        time++;
+        display.textContent = time.toString();
+    }, 1000);
+};
+const fPause = () => {
+    if (intervalId === null)
+        return;
+    clearInterval(intervalId);
+    intervalId = null;
+};
+const fReset = () => {
+    if (intervalId !== null) {
+        clearInterval(intervalId);
+        intervalId = null;
     }
+    time = 0;
+    display.textContent = "0";
+};
+function timer() {
+    start.addEventListener("click", fStart);
+    pause.addEventListener("click", fPause);
+    reset.addEventListener("click", fReset);
 }
 timer();
 //# sourceMappingURL=index.js.map
