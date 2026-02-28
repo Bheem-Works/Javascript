@@ -77,8 +77,8 @@ class TodoList {
 // Example usage
 const myTodos = new TodoList();
 
-myTodos.addTodo("Learn JavaScript classes");
-myTodos.addTodo("Build CRUD Todo project");
+myTodos.addTodo("Follow the articulation methods which is guided by the video.");
+myTodos.addTodo("Study The Books and read revise the english,economics,account,computer");
 myTodos.addTodo("Practice coding daily");
 
 myTodos.updateTodo(2, "Build CRUD Todo app with classes");
